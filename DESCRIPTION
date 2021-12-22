@@ -8,7 +8,7 @@ Authors@R:
            email = "vidonne@unhcr.org"),
       person(given = "Ahmadou",
            family = "Dicko",
-           role =  "ctb",
+           role = c("aut", "ctb"),
            email = "mail@ahmadoudicko.com"),
       person(given = "Edouard",
            family = "Legoupil",
@@ -20,16 +20,14 @@ Description: Produce documents compliant with UNHCR brand identity.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/vidonne/unhcrdown
-BugReports: https://github.com/vidonne/unhcrdown/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
 Imports:
     magick,
     pagedown,
+    officedown,
     rmarkdown,
-    xaringan,
-    officedown
-Suggests:
-    unhcrthemes
-Remotes: vidonne/unhcrthemes
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+    officer,
+    xaringan
+URL: https://github.com/vidonne/unhcrdown
+BugReports: https://github.com/vidonne/unhcrdown/issues
